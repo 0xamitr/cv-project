@@ -38,13 +38,44 @@ body{
 }
 
 .display, .input{
-    height: 70vh;
+    height: 75vh;
     width: 30vw;
-    padding: 10px;
     border: 1px solid grey;
     box-shadow:  -1px 1px grey,
          -2px 2px grey,
          -3px 3px grey,
          -4px 4px grey,
          -5px 5px grey;
+}
+
+p{
+    height: 2vh;
+}
+
+.input > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.top{
+    height: 20%;
+    background-color: grey;
+}
+
+.top > div{
+    display: flex;
+    gap: 5px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
 }
