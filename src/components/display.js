@@ -13,19 +13,43 @@ class Display extends Component {
                 </div>
                 <div className="bottom">
                     <div className="left">
-                    <h3>Description</h3>
-                    <p>{this.props.description}</p>
-                    <p>{this.props.position}</p>
-                    <p>{this.props.companyname}</p>
-                    <p>{this.props.city}</p>
-                    <p>{this.props.from}</p>
-                    <p>{this.props.to}</p>
-                    <p>{this.props.universityname}</p>
-                    <p>{this.props.cityed}</p>
-                    <p>{this.props.degree}</p>
-                    <p>{this.props.subject}</p>
-                    <p>{this.props.fromed}</p>
-                    <p>{this.props.toed}</p>
+                        <div className="left-description">
+                            <h3>Description</h3>
+                            <p>{this.props.description}</p>
+                        </div>
+                        <div className="left-exp">
+                            <h3>Experience</h3>
+                            <div>
+                                <div className="date">
+                                    <p>{this.props.from}</p>
+                                    <p>-  {this.props.to}</p>
+                                </div>
+                                <div>
+                                    <p>{this.props.position}</p>
+                                    <div className="company">
+                                        <p>{this.props.companyname}</p>
+                                        <p>{this.props.city}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="left-acad">
+                            <h3>Education</h3>
+                            <div>
+                                <div className="date">
+                                    <p>{this.props.fromed}</p>
+                                    <p>-  {this.props.toed}</p>
+                                </div>
+                                <div>
+                                    <div className="uni">
+                                        <p>{this.props.universityname}</p>
+                                        <p>{this.props.cityed}</p>
+                                    </div>
+                                    <p>Degree: {this.props.degree}</p>
+                                    <p>Subject: {this.props.subject}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="right">
                         <h3>Personal Details</h3>

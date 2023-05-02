@@ -11,13 +11,11 @@ class Pracex extends Component {
     render(){
         return(
             <div className="prac-exp">
+                    <input name="from" type="year" placeholder="from"onKeyUp={(e) => {this.handleClick(e)}}/>
+                    <input name="to" type="year" placeholder="to" onKeyUp={(e) => {this.handleClick(e)}}/>
                     <input name="position" type="text" placeholder="position" onKeyUp={(e) => {this.handleClick(e)}}/>
                     <input name="companyname" type="text" placeholder="company name" onKeyUp={(e) => {this.handleClick(e)}}/>
                     <input name="city" type="text" placeholder="city" onKeyUp={(e) => {this.handleClick(e)}}/>
-                    <input name="from" type="year" placeholder="from"onKeyUp={(e) => {this.handleClick(e)}}/>
-                    <input name="to" type="year" placeholder="to" onKeyUp={(e) => {this.handleClick(e)}}/>
-
-
             </div>
         )
     }

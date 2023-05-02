@@ -72,10 +72,58 @@ p{
 
 .top > div{
     display: flex;
-    gap: 5px;
+    gap: 1vw;
 }
 
 .bottom{
     display: flex;
+    background-color: yellow;
+    height: 80%;
     justify-content: space-between;
+}
+
+.left{
+    width: 70%;
+}
+.right{
+    width: 30%;
+}
+
+.exp{
+    display: flex;
+    justify-content: space-between;
+    background-color: greenyellow;
+}
+
+.exp > .date{
+    display: flex;
+    gap: 10px;
+}
+
+.company{
+    display: flex;
+    gap: 10px;
+}
+
+.display p{
+    word-wrap: break-word;
+}
+.date{
+    display: flex;
+    gap: 5px;
+}
+
+.left-exp > div{
+    display: flex; 
+    gap: 20px;
+}
+
+.uni{
+    display: flex;
+    gap: 5px;
+}
+
+.left-acad > div{
+    display: flex;
+    gap: 20px;
 }
