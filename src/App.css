@@ -108,6 +108,7 @@ p{
 .display p{
     word-wrap: break-word;
 }
+
 .date{
     display: flex;
     gap: 5px;
