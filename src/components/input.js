@@ -4,6 +4,7 @@ import Eduex from "./eduex"
 import Pracex from "./pracex"
 
 class Input extends Component {
+    
     render() {
         return (
             <div className="input">

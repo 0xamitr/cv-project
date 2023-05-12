@@ -12,6 +12,7 @@ class Basic extends Component {
     render() {
         return (
             <div className="basic-info">
+                <h2>Basic Information</h2>
                 <input name="name" type="text" placeholder="name" onKeyUp={(e) => {this.handleClick(e)}}/>
                 <input name="lastname" type="text" placeholder="lastname" onKeyUp={(e) => {this.handleClick(e)}}/>
                 <input name="title" type="text" placeholder="title" onKeyUp={(e) => {this.handleClick(e)}}/>

@@ -6,10 +6,10 @@ class Display extends Component {
             <div className="display">
                 <div className="top">
                     <div>
-                        <p>{this.props.name}</p>
-                        <p>{this.props.lastname}</p>
+                        <h1>{this.props.name}&nbsp;&nbsp;</h1>
+                        <h1>{this.props.lastname}</h1>
                     </div>
-                    <p>{this.props.title}</p>
+                    <h2>{this.props.title}&nbsp;</h2>
                 </div>
                 <div className="bottom">
                     <div className="left">
@@ -22,12 +22,14 @@ class Display extends Component {
                             <div>
                                 <div className="date">
                                     <p>{this.props.from}</p>
-                                    <p>-  {this.props.to}</p>
+                                    <p>-</p>
+                                    <p>{this.props.to}</p>
                                 </div>
-                                <div>
-                                    <p>{this.props.position}</p>
+                                <div className="data">
+                                    <p className="position">{this.props.position}</p>
                                     <div className="company">
                                         <p>{this.props.companyname}</p>
+                                        <p>,&nbsp;</p>
                                         <p>{this.props.city}</p>
                                     </div>
                                 </div>
@@ -38,11 +40,13 @@ class Display extends Component {
                             <div>
                                 <div className="date">
                                     <p>{this.props.fromed}</p>
-                                    <p>-  {this.props.toed}</p>
+                                    <p>-</p>
+                                    <p>{this.props.toed}</p>
                                 </div>
-                                <div>
+                                <div className="data">
                                     <div className="uni">
                                         <p>{this.props.universityname}</p>
+                                        <p>,&nbsp;</p>
                                         <p>{this.props.cityed}</p>
                                     </div>
                                     <p>Degree: {this.props.degree}</p>
@@ -52,10 +56,21 @@ class Display extends Component {
                         </div>
                     </div>
                     <div className="right">
-                        <h3>Personal Details</h3>
-                        <p>{this.props.address}</p>
-                        <p>{this.props.phone}</p>
-                        <p>{this.props.email}</p>
+                        <div>
+                            <h2>Personal Details</h2>
+                            <div>
+                                <h3>Address</h3>
+                                <p>{this.props.address}</p>
+                            </div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>{this.props.phone}</p>
+                            </div>
+                            <div>     
+                                <h3>Email</h3>
+                               <p>{this.props.email}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

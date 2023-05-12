@@ -11,6 +11,7 @@ class Eduex extends Component {
     render(){
         return(
             <div className="edu-exp">
+                    <h2>Education</h2>
                     <input name="universityname" type="text" placeholder="universityname" onKeyUp={(e) => {this.handleClick(e)}}/>
                     <input name="cityed" type="text" placeholder="city" onKeyUp={(e) => {this.handleClick(e)}}/>
                     <input name="degree" type="text" placeholder="degree" onKeyUp={(e) => {this.handleClick(e)}}/>

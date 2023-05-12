@@ -1,4 +1,4 @@
-html{
+html, *{
     margin: 0px;
     padding: 0px;
 }
@@ -6,12 +6,12 @@ html{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
     align-items: center;
 }
 
 .header{
-    min-height: 5vh;
+    min-height: 8vh;
     min-width: 100vw;
     background-color: powderblue;
     display: flex;
@@ -33,62 +33,81 @@ body{
 .main{
     display: flex;
     justify-content: space-around;
-    gap: 10vw;
-    
+    gap: 5vw;
 }
 
 .display, .input{
-    height: 75vh;
-    width: 30vw;
-    border: 1px solid grey;
-    box-shadow:  -1px 1px grey,
-         -2px 2px grey,
-         -3px 3px grey,
-         -4px 4px grey,
-         -5px 5px grey;
+    min-height: 100vh;
+    width: 40vw;
+    border: solid 2px grey;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 5px;
 }
 
-p{
-    height: 2vh;
-}
 
 .input > div{
     display: flex;
     flex-direction: column;
     gap: 1vh;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .input{
+    background-color: rgb(227, 232, 233);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+input{
+    height: 30px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.top{
+    height: 12%;
+    background-color: rgb(146, 146, 248);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 10px;
-}
-
-.top{
-    height: 20%;
-    background-color: grey;
+    padding-left: 20px;
 }
 
 .top > div{
     display: flex;
-    gap: 1vw;
 }
 
 .bottom{
     display: flex;
-    background-color: yellow;
-    height: 80%;
+    height: 90%;
     justify-content: space-between;
 }
 
 .left{
+    padding-left: 20px;
+    padding-top: 20px;
     width: 70%;
+    background-color: rgb(227, 232, 233);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .right{
     width: 30%;
+    background-color: rgb(200, 200, 200);
+    padding-top: 20px;
+    padding-left: 20px;
 }
-
+.right > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .exp{
     display: flex;
     justify-content: space-between;
@@ -102,16 +121,17 @@ p{
 
 .company{
     display: flex;
-    gap: 10px;
 }
 
-.display p{
+p{
     word-wrap: break-word;
 }
 
 .date{
     display: flex;
     gap: 5px;
+    width: 35%;
+    word-break:break-word;
 }
 
 .left-exp > div{
@@ -121,10 +141,20 @@ p{
 
 .uni{
     display: flex;
-    gap: 5px;
 }
 
 .left-acad > div{
     display: flex;
     gap: 20px;
+}
+
+.data{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5spx;
+}
+
+.top{
+    color: white;
 }
